@@ -26,8 +26,6 @@ export default function Cart() {
       <hr />
       <p>
         {email ? <button>Place Order</button> : <button>Login to Order</button>}
-        
-        
       </p>
     </div>
   );
