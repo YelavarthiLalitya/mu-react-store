@@ -16,9 +16,11 @@ function App() {
   //const [user, setUser] = useState({});
   const [users, setUsers] = useState([]);
   const [cart, setCart] = useState({});
+  const [email, setEmail] = useState({});
+
   return (
     <div>
-    <AppContext.Provider value={{users, setUsers, cart, setCart}}>
+    <AppContext.Provider value={{users, setUsers, cart, setCart, email, setEmail}}>
       <BrowserRouter>
         <Header name="Mu-React-Store" />
         <Routes>
