@@ -1,7 +1,13 @@
 import React from 'react';
 import './Home.css';
+import { useNavigate } from "react-router-dom";
+
 
 export default function Home() {
+    const Navigate = useNavigate();
+  const cart = () =>{
+    Navigate("/cart");
+  }
   const products = [
     {
       id: 1,
@@ -36,7 +42,7 @@ export default function Home() {
           <h2>{product.name}</h2>
           <p>{product.desc}</p>
           <p>₹{product.price}</p>
-          <button>Add to cart</button>
+          <button onClick={cart}>Add to cart</button>
         </div>
       ))}
     </div>

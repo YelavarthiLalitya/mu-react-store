@@ -8,6 +8,7 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Home from './Home.jsx';
 import Login from './Login.jsx';
+import Cart from './Cart.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './Register.jsx';
 export const AppContext = createContext()
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>
