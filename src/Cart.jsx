@@ -5,10 +5,12 @@ import { useContext } from 'react'
 export default function Cart() {
     const {cart} = useContext(AppContext)
     const increment = () =>{
-        setCart({...cart,qty:cart[qty]+1})
+        alert("Increment")
+        setCart({...cart,qty:cart.qty+1})
     };
     const decrement = () =>{
-        setCart({...cart,qty:cart[qty]-1})
+        alert("Decrement")
+        setCart({...cart,qty:cart.qty-1})
     };
   return (
     <div>
@@ -22,7 +24,7 @@ export default function Cart() {
             <button onClick={increment}>+</button>
         </p>
         <hr />
-        <h2>Order Value:{cart.price* cart.qty}</h2>
+        <h2>Order Value:{cart.price * cart.qty}</h2>
         
     </div>
   )
