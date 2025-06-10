@@ -10,8 +10,9 @@ export default function Home() {
                name:obj.name,
                price:obj.price,
                desc:obj.desc,
-               qty:1});
-      Navigate("/cart")
+               qty:1,
+              });
+      Navigate("/cart");
     }
   const products = [
     {
