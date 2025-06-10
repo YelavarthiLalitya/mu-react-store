@@ -1,0 +1,7 @@
+.App-Footer-Row{
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    padding: 10px;
+}
+
