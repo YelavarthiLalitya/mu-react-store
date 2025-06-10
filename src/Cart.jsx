@@ -4,6 +4,12 @@ import { useContext } from 'react'
 
 export default function Cart() {
     const {cart} = useContext(AppContext)
+    const increment = () =>{
+        setCart({...cart,qty:cart[qty]+1})
+    };
+    const decrement = () =>{
+        setCart({...cart,qty:cart[qty]-1})
+    };
   return (
     <div>
         <h2>My cart</h2>
