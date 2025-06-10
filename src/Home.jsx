@@ -1,9 +1,11 @@
 import React from 'react';
 import './Home.css';
 import { useNavigate } from "react-router-dom";
-
+import { AppContext } from './App';
+import { useContext } from 'react';
 
 export default function Home() {
+  const [cart, setCart] = useState({});
     const Navigate = useNavigate();
     const addToCart = (obj) =>{
       setCart({id:obj.id,
