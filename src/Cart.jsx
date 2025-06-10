@@ -6,7 +6,18 @@ export default function Cart() {
     const {cart} = useContext(AppContext)
   return (
     <div>
-        {cart.name}
+        <h2>My cart</h2>
+        <h3>{cart.name}</h3>
+        <p>{cart.desc}</p>
+        <h3>{cart.price}</h3>
+        <p>
+            <button>-</button>
+            {cart.qty}
+            <button>+</button>
+        </p>
+        <hr />
+        <h2>Order Value:{cart.price* cart.qty}</h2>
+        
     </div>
   )
 }
