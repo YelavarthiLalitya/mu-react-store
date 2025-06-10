@@ -22,8 +22,8 @@ export default function Header({ name }) {
           <li>
             {email ? (
               <>
-              <Link to="/order">Order</Link>
-              <Link to="/logout">Logout</Link>
+                <Link to="/order">Order</Link>-
+                <Link to="/logout">Logout</Link>
               </>
             ) : (
               <Link to="/login">Login</Link>
