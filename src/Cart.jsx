@@ -17,9 +17,9 @@ export default function Cart() {
         <p>{cart.desc}</p>
         <h3>{cart.price}</h3>
         <p>
-            <button>-</button>
+            <button onClick={decrement}>-</button>
             {cart.qty}
-            <button>+</button>
+            <button onClick={increment}>+</button>
         </p>
         <hr />
         <h2>Order Value:{cart.price* cart.qty}</h2>
