@@ -11,7 +11,7 @@ export default defineConfig({
       includeAssets: ["favicon.svg", "robots.txt", "apple-touch-icon.png"],
       manifest: {
         name: "Learning Management",
-        short_name: "nairx",
+        short_name: "YelavarthiLalitya",
         description: "Full Stack Learning Management",
         theme_color: "#ffffff",
         icons: [
