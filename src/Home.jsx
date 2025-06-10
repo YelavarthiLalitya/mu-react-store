@@ -5,7 +5,12 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
     const Navigate = useNavigate();
-    const addToCart = () =>{
+    const addToCart = (obj) =>{
+      setCart({id:obj.id,
+               name:obj.name,
+               price:obj.price,
+               desc:obj.desc,
+               qty:1});
       Navigate("/cart")
     }
   const products = [
