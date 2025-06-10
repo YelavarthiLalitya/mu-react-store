@@ -6,7 +6,7 @@ import { useContext } from 'react';
 
 
 export default function Home() {
-  const [cart, setCart] = useState({});
+const { cart, setCart } = useContext(AppContext);
     const Navigate = useNavigate();
     const addToCart = (obj) =>{
       setCart({id:obj.id,
