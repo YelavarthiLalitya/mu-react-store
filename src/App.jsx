@@ -9,11 +9,9 @@ import Cart from "./Cart";
 import Logout from "./Logout";
 import Order from "./Order";
 import Register from "./Register";
+import Product from "./Product";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Product from "./Product";
-
-
 export const AppContext = createContext();
 function App() {
   const [users, setUsers] = useState([]);
@@ -29,7 +27,7 @@ function App() {
           <Header name="mu-react-store" />
           <Routes>
             <Route index element={<Product />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
